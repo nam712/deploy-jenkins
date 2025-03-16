@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/nam712/ktx-main.git'
+                git branch: 'main', url: 'https://github.com/nam712/deploy-jenkins.git'
             }
         }
         
