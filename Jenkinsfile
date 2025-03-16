@@ -15,10 +15,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh 'docker compose pull || exit 1'  
-                    sh 'docker compose down || exit 1' 
-                    sh 'docker compose up -d || exit 1' 
-                    sh 'docker image prune -af || true' 
+                    sh 'docker-compose pull || exit 1'  
+                    sh 'docker-compose down || exit 1' 
+                    sh 'docker-compose up -d || exit 1' 
+                    sh 'docker-image prune -af || true' 
                 }
             }
         }
